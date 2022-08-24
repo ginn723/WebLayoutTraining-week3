@@ -74,21 +74,27 @@ body {
   background-color: white;
 }
 
-/* .design-frame-img:nth-child(1) {
-  background-image: url('../images/product-8.png');
-  background-position: 25% 25%;
-}
-
-.design-frame-img:nth-child(2) {
-  background-image: url('../images/product-9.png');
-  background-position: 50% 50%;
-} */
-
-.design-frame-img{
+.design-frame-img {
   width: 585px;
   height: 240px;
   overflow: hidden;
 }
+
+/* .design-frame-img:nth-child(1) {
+  background-image: url('../images/product-8.png');
+  background-position: 25% 25%;
+} */
+
+.design-frame-img1 {
+  background-image: url('../images/product-8.png');
+  background-position: 25% 25%;
+}
+
+.design-frame-img2 {
+  background-image: url('../images/product-9.png');
+  background-position: 50% 50%;
+}
+
 
 .overflow-hidden
 {
