@@ -181,6 +181,10 @@ input[type='checkbox'] {
   .design-frame-card{
     width: 100%;
   }
+
+  .recommend-card-img {
+    width: 100%;
+  }
 }
 
 /* mobile */
@@ -342,10 +346,6 @@ input[type='checkbox'] {
   .design-frame-img {
     object-fit: cover;
     height: 240px;
-  }
-
-  .recommend-card-img{
-    width: 100%;
   }
 
   .btn-submit {
