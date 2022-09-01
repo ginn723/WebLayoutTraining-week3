@@ -1,8 +1,6 @@
 body {
   font-family: 'Roboto', 'Noto Sans TC', sans-serif;
   line-height: 1.5;
-  /* background-color: var(--primary-color);
-  color: var(--beige); */
 }
 
 .nav{
@@ -10,14 +8,9 @@ body {
 }
 
 .container{
-  max-width: 1140px;
+  max-width: 1132px;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-.nav-link:hover,
-.nav-link:focus{
-  font-weight: bold;
+  padding: 0 12px;
 }
 
 .header{
@@ -66,41 +59,33 @@ body {
   background-image: url('../images/bg.png');
   background-size: cover;
   background-position: 40% 50%;
-  /* height: 608px; */
 }
 
 .design-frame-card{
-  height: 328px;
+  width: 50%;
   background-color: white;
 }
 
-.design-frame-img {
-  width: 585px;
+.design-frame-img1{
+  background-image: url('../images/product-8.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 240px;
-  overflow: hidden;
-}
-
-/* .design-frame-img:nth-child(1) {
-  background-image: url('../images/product-8.png');
-  background-position: 25% 25%;
-} */
-
-.design-frame-img1 {
-  background-image: url('../images/product-8.png');
-  background-position: 25% 25%;
 }
 
 .design-frame-img2 {
   background-image: url('../images/product-9.png');
-  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 240px;
 }
-
 
 .overflow-hidden
 {
   overflow: hidden;
 }
-
 
 .recommend,
 .design-frame,
@@ -112,26 +97,24 @@ body {
 }
 
 .recommend-card{
-  max-width: 306px;
-  height: 511px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: .5rem;
 }
 
-
 .recommend-card-img{
-  height: 50%;
-  width: 306px;
+  object-fit: cover;
+  height: 306px;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
 }
 
 .recommend-list-content{
-  height: 50%;
+  height: 306px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+  letter-spacing: 1px;
 }
 
 .contact{
@@ -143,6 +126,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+input[type='checkbox'] {
+  accent-color: var(--primary-color);
 }
 
 .btn-submit{
@@ -183,20 +170,24 @@ body {
 }
 
 /* pad */
-@media(max-width: 768px) {
+@media(max-width: 992px) {
   .container {
-    max-width: 720px;
+    max-width: 992px;
   }
   .header{
     background-image: url('../images/banner-md.png');
   }
+
+  .design-frame-card{
+    width: 100%;
+  }
 }
 
-
-@media(max-width: 415px) {
+/* mobile */
+@media(max-width: 576px) {
   .container {
-    max-width: 415px;
-    padding: 0 14px;
+    max-width: 576px;
+    padding: 0 12px;
   }
 
   .recommend,
@@ -345,31 +336,16 @@ body {
   }
 
   .icon-card {
-    max-width: 100%;
-  }
-
-  .design-frame-card{
     width: 100%;
   }
 
   .design-frame-img {
-    width: 100%;
-  }
-
-  .design-frame-img {
-    width: 100%;
+    object-fit: cover;
     height: 240px;
   }
 
-  .recommend-card {
-    max-width: 100%;
-    overflow: hidden;
-    height: auto;
-  }
-  
   .recommend-card-img{
     width: 100%;
-    height: auto;
   }
 
   .btn-submit {

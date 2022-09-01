@@ -141,6 +141,7 @@ table {
 
 /* img 避免圖片傳入高像素問題 */
 img{
+  vertical-align: middle;
   max-width: 100%;
   height: auto;
 }
@@ -152,6 +153,7 @@ a{
 
 a:hover, a:focus{
   color: var(--beige);
+  filter: brightness(88%);
 }
 
 :root {
